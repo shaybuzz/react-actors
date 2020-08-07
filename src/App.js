@@ -8,21 +8,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import actorsMock from './components/actors-mock.json';
 import { mockComponent } from 'react-dom/test-utils';
 
-// let actors = [];
-// for(let i = 0 ; i < actorsMock.length ; i++){
-//   actors.push(new ActorModel(
-//     actorsMock[i].fname,
-//     actorsMock[i].lname,
-//     actorsMock[i].birthday,
-//     actorsMock[i].imageUrl,
-//     actorsMock[i].imdbId
-//     ));
-// }
-
-let actorsDiv = actorsMock.map((actor, index) =>
-  <div key={index}>{actor.lname} {actor.fname}</div>
-);
-
 let actors = actorsMock.map(actor =>
   new ActorModel(
     actor.fname,
@@ -32,15 +17,16 @@ let actors = actorsMock.map(actor =>
     actor.imdbId)
 );
 
+let cards = actors.map(actor => (
+  <ActorCard lname={actor.lname} fname={actor.fname} imdbId={actor.imdbId} imageUrl={actor.imageUrl} />
+));
+
 console.log(actors[1].fname);
 
 function App() {
   return (
     <div class="container">
-    <div>{actorsDiv}</div>
-      <p>{actors[0].sayHello()}</p>
-      <ActorCard />
-      <ActorCard />
+      {cards}
     </div>
   );
 }
