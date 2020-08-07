@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import $ from 'jquery';
-import ActorModel from './components/ActorModel'
+import ActorModel from './components/ActorModel';
+import ActorCard from './components/ActorCard';
+
 import actorsMock from './components/actors-mock.json';
 import { mockComponent } from 'react-dom/test-utils';
 
@@ -16,25 +18,27 @@ import { mockComponent } from 'react-dom/test-utils';
 //     ));
 // }
 
-let actorsDiv = actorsMock.map((actor, index)=> 
-<div key={index}>{actor.lname} {actor.fname}</div>
+let actorsDiv = actorsMock.map((actor, index) =>
+  <div key={index}>{actor.lname} {actor.fname}</div>
 );
 
-let actors = actorsMock.map(actor=> 
+let actors = actorsMock.map(actor =>
   new ActorModel(
     actor.fname,
     actor.lname,
     actor.birthday,
     actor.imageUrl,
     actor.imdbId)
-  );
+);
 
-  console.log(actors[1].fname);
+console.log(actors[1].fname);
 
 function App() {
   return (
     <div>
-        {actors[0].sayHello()}
+      <div>{actorsDiv}</div>
+      <p>{actors[0].sayHello()}</p>
+      <ActorCard />
     </div>
   );
 }
