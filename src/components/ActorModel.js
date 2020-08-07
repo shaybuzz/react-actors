@@ -6,4 +6,10 @@ class ActorModel {
         this.imageUrl = imageUrl;
         this.imdbId = imdbId;
     }
+
+    sayHello(){
+        return "hello Mr." + this.lname;
+    }
 }
+
+export default ActorModel;
