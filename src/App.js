@@ -3,6 +3,7 @@ import './App.css';
 import $ from 'jquery';
 import ActorModel from './components/ActorModel';
 import ActorCard from './components/ActorCard';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import actorsMock from './components/actors-mock.json';
 import { mockComponent } from 'react-dom/test-utils';
@@ -35,9 +36,10 @@ console.log(actors[1].fname);
 
 function App() {
   return (
-    <div>
-      <div>{actorsDiv}</div>
+    <div class="container">
+    <div>{actorsDiv}</div>
       <p>{actors[0].sayHello()}</p>
+      <ActorCard />
       <ActorCard />
     </div>
   );
