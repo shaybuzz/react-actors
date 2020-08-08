@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import ActorModel from './components/ActorModel';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import GalleryComp from './components/GalleryComp';
 import actorsMock from './components/actors-mock.json';
 import { mockComponent } from 'react-dom/test-utils';
@@ -17,7 +16,7 @@ let actors = actorsMock.map(actor =>
 
 function App() {
   return (
-    <div class="container">
+    <div>
       <GalleryComp actors={actors} />
     </div>
   );

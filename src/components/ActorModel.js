@@ -17,10 +17,6 @@ class ActorModel {
 
     getAge() {
         let now = new Date(Date.now());
-        console.log(now.getDate());
-        console.log(now.getMonth());
-        console.log(now.getFullYear());
-
         let yearDiff = now.getFullYear() - this.birthDay.getFullYear();
         yearDiff = this.hasCelebratedBirthdayThisYear() ? yearDiff : yearDiff - 1;
         return yearDiff;
