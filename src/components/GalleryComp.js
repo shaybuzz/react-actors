@@ -7,7 +7,7 @@ function GalleryComp(props){
     const {actors} = props;
 
     let cards = actors.map(actor => (
-        <ActorCard actor={actor} />
+        <ActorCard key={actor.imdbId} actor={actor} />
       ));
 
     return (

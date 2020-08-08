@@ -2,36 +2,36 @@
     {
         "fname": "Jim",
         "lname": "Carrey",
-        "birthday": "January 17, 1962",
-        "imageUrl": "https://www.imdb.com/name/nm0000120/mediaviewer/rm2776866816",
+        "birthday": "1962-02-16T22:00:00.000Z",
+        "imageUrl": "https://m.media-amazon.com/images/M/MV5BMTQwMjAwNzI0M15BMl5BanBnXkFtZTcwOTY1MTMyOQ@@._V1_SY1000_CR0,0,812,1000_AL_.jpg",
         "imdbId": "nm0000120"
     },
     {
         "fname": "Sharon",
         "lname": "Stone",
-        "birthday": "March 10, 1958",
-        "imageUrl": "https://www.imdb.com/name/nm0000232/mediaviewer/rm2563147520",
+        "birthday": "1958-03-10T22:00:00.000Z",
+        "imageUrl": "https://m.media-amazon.com/images/M/MV5BMTg0MDU1ODQwNF5BMl5BanBnXkFtZTcwOTc3MjQwNA@@._V1_.jpg",
         "imdbId": "nm0000232"
     },
     {
         "fname": "Frances",
         "lname": "Conroy",
-        "birthday": "March 15, 1953",
-        "imageUrl": "https://www.imdb.com/name/nm0175814/mediaviewer/rm2541263360",
+        "birthday": "1953-03-15T22:00:00.000Z",
+        "imageUrl": "https://m.media-amazon.com/images/M/MV5BMTM4OTIzMTg5MF5BMl5BanBnXkFtZTYwNjA5OTIz._V1_.jpg",
         "imdbId": "nm0175814"
     },
     {
         "fname": "Lauren",
         "lname": "Ambrose",
-        "birthday": "February 20, 1978",
-        "imageUrl": "https://www.imdb.com/name/nm0024404/mediaviewer/rm3193412352",
+        "birthday": "1978-02-20T22:00:00.000Z",
+        "imageUrl": "https://m.media-amazon.com/images/M/MV5BMTI2NzI1NzkyOF5BMl5BanBnXkFtZTYwNTgwNDE1._V1_.jpg",
         "imdbId": "nm0024404"
     },
     {
         "fname": "Rachel",
         "lname": "Griffiths",
-        "birthday": "December 18, 1968",
-        "imageUrl": "https://www.imdb.com/name/nm0341737/mediaviewer/rm1678608896",
+        "birthday": "1968-12-18T22:00:00.000Z",
+        "imageUrl": "https://m.media-amazon.com/images/M/MV5BMTI3OTQzNzA0M15BMl5BanBnXkFtZTcwNTQ0ODkyMg@@._V1_.jpg",
         "imdbId": "nm0341737"
     }
 ]
