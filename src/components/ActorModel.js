@@ -11,6 +11,10 @@ class ActorModel {
         this.birthDay = new Date(birthday);
     }
 
+    getFullName() {
+        return this.fname + " " + this.lname;
+    }
+
     getAge() {
         let now = new Date(Date.now());
         console.log(now.getDate());
