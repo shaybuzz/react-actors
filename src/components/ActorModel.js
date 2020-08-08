@@ -11,6 +11,12 @@ class ActorModel {
         this.birthDay = new Date(birthday);
     }
 
+    isNamePrefix(prefix){
+        prefix = prefix.toLowerCase();
+        return this.getFullName().toLowerCase().startsWith(prefix) || 
+        this.lname.toLowerCase().startsWith(prefix);
+    }
+
     getFullName() {
         return this.fname + " " + this.lname;
     }
@@ -20,6 +26,10 @@ class ActorModel {
         let yearDiff = now.getFullYear() - this.birthDay.getFullYear();
         yearDiff = this.hasCelebratedBirthdayThisYear() ? yearDiff : yearDiff - 1;
         return yearDiff;
+    }
+
+    toString(){
+        return this.getFullName() + " imdb " + this.imdbId;
     }
 
     isBirthday() {
